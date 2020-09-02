@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Semaine #{week}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  body
+    include navbar
+
+    .container(style='margin-top: 20px')
+      .jumbotron
+        if onVacation
+          h1.display-1 C'est les vacances chef
+        h1.display-4 Semaine #{even}
+        p Nous sommes le <b>#{date}</b>. La semaine du #{monday} au #{sunday} est la semaine <b>#{week}</b>. Prochaine vacances dans #{nextVacation}.
