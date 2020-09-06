@@ -22,7 +22,6 @@ router.get('/', function(req, res, next) {
       scale: 'GREGORIAN',
       method: 'PUBLISH'
     });
-    
     Object.keys(events).forEach((uid) => { // Events is an object
       event = events[uid]
       calendar.createEvent({
@@ -33,8 +32,7 @@ router.get('/', function(req, res, next) {
         uid: event.uid,
         location: event.location,
         status: event.status,
-        transparency: event.transparency,
-        timezone: 'Europe/Paris'
+        transparency: event.transparency
       });
     });
 
