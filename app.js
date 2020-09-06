@@ -7,12 +7,14 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var weekRouter = require('./routes/week');
+var calRouter = require('./routes/cal');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+app.set('url', process.env.STUDENTURL); // export STUDENTURL=https://example.com
 
 app.use(logger('combined'));
 app.use(express.json());
@@ -23,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/week', weekRouter);
+app.use('/cal', calRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
