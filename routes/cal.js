@@ -26,8 +26,8 @@ router.get('/', function(req, res, next) {
     Object.keys(events).forEach((uid) => { // Events is an object
       event = events[uid]
       calendar.createEvent({
-        start: event.start,
-        end: event.end,
+        start: event.start.toISOString(), // event.start would render invalid UTC times
+        end: event.end.toISOString(),
         summary: event.description.split('Matière : ')[1],
         description: event.summary,
         uid: event.uid,
