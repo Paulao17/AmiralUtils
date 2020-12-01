@@ -1,2 +1,2 @@
 # AmiralUtils
-Express WebApp serving verious info useful to some students
+Express WebApp serving various info useful to some students
