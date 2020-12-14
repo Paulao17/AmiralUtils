@@ -3,11 +3,11 @@ const dates = [{
     end: new Date(2020, 10, 2, 8)
   },
   {
-    start: new Date(2020, 11, 17, 18),
+    start: new Date(2020, 11, 18, 18),
     end: new Date(2021, 0, 4, 8)
   }, {
-    start: new Date(2021, 1, 19, 18),
-    end: new Date(2021, 2, 7, 8)
+    start: new Date(2021, 1, 20, 18),
+    end: new Date(2021, 2, 8, 8)
   }
 ]
 
