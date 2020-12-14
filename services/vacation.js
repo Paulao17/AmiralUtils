@@ -1,7 +1,15 @@
 const dates = [{
-  start: new Date(2020, 9, 16, 18),
-  end: new Date(2020, 10, 2, 8)
-}]
+    start: new Date(2020, 9, 16, 18),
+    end: new Date(2020, 10, 2, 8)
+  },
+  {
+    start: new Date(2020, 11, 17, 18),
+    end: new Date(2021, 0, 4, 8)
+  }, {
+    start: new Date(2021, 1, 19, 18),
+    end: new Date(2021, 2, 7, 8)
+  }
+]
 
 const day = 24 * 3600 * 1000; // One day, in ms
 const hour = 3600 * 1000; // One hour, is ms
