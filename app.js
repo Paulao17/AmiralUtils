@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var weekRouter = require('./routes/week');
 var calRouter = require('./routes/cal');
+var dateRouter = require('./routes/4date');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/week', weekRouter);
 app.use('/cal', calRouter);
+app.use('/date', dateRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
