@@ -6,7 +6,7 @@ var date = require('../services/4date')
 router.get('/', function(req, res, next) {
   res.render('week', {
     title: 'la date',
-    date: date.getAdjustedDate().toLocaleDateString(),
+    date: date.getAdjustedDate().toString(),
   });
 });
 
